@@ -1,5 +1,14 @@
 # redisAligner
-NGS 36-mer perfect match sequecing aligner based on redis
+NGS 36-mer perfect match sequecing aligner based on redis.
+
+NIPT(Non-invasive prenatal testing) is becoming an acceptable prenatal test method.
+Most short read alignment tools are mismatch and gap tolerated  in order to detect SNP and InDel, however Quantity based variants such as chromosomal aneuploidy and CNV(Copy Number Variation) do not need to perform gap and mismatch tolerated alignment which waste too much time and computing resources. There’s no existing tool to perform Quantity based variants read mapping tool.
+
+Couting perfect match read on each chromosome and chromosomal’s p-ter and q-ter, we can detect whether the pregnant woman’s baby has chromosomal abnormality.
+
+Using sliding window count algorithm, we can deduce whether the pregnant woman’s baby has a MicroDeletion or MicroDuplication Syndrome. And we can also rule out the possibility that the pregnant woman has a MicroDuplication Polymorphysm ,whereas we dectect the baby may have a trisomy syndrome.
+
+Redis is an extremly fast in-memory database that persists on disk. The data model is key-value, but many different kind of values are supported: Strings, Lists, Sets, Sorted Sets, Hashes, HyperLogLogs, Bitmaps.It is written in c and devoted  to performance.
 
 ## Installation
 1. requirement

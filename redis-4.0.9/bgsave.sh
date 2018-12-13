@@ -1,0 +1,12 @@
+../src/redis-cli -p 6379 save &
+../src/redis-cli -p 6380 save &
+../src/redis-cli -p 6381 save &
+../src/redis-cli -p 6382 save &
+../src/redis-cli -p 6383 save &
+../src/redis-cli -p 6384 save &
+../src/redis-cli -p 6385 save &
+../src/redis-cli -p 6386 save &
+../src/redis-cli -p 6387 save &
+../src/redis-cli -p 6388 save &
+../src/redis-cli -p 6389 save &
+../src/redis-cli -p 6390 save &
